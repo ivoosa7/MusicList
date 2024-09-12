@@ -12,7 +12,12 @@
   </thead>
   <tbody>
     <tr *ngFor="let music of musics">
-      <th scope="row"></th>
+      <th scope="row">{{music.id}}</th>
+      <td>{{music.title}}</td>
+      <td>{{music.artist}}</td>
+      <td>{{music.year}}</td>
+      <td>{{music.genre}}</td>
+      <td>{{music.label}}</td>
     </tr>
   </tbody>
   </table>
