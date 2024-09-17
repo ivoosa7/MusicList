@@ -7,8 +7,11 @@ import { Music } from './Music';
   providedIn: 'root'
 })
 export class MusicService {
+
+  //injeção de dependência é o que esse método faz;
   constructor(private http:HttpClient) { }
-  getMusic():Observable<Music[]>{
-    return this.http.get<Music[]>("http://localhost:3000/musicList")
+
+  getMusic(): Observable<Music[]>{
+    return this.http.get<Music[]>( 'http://localhost:3000/musicList');
   }
 }
