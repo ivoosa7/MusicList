@@ -6,11 +6,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MusicTableComponent } from './music-table/music-table.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MusicFormComponent } from './music-form/music-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MusicTableComponent
+    MusicTableComponent,
+    MusicFormComponent
   ],
   imports: [
     BrowserModule,
