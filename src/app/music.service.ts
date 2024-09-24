@@ -12,6 +12,10 @@ export class MusicService {
   constructor(private http:HttpClient) { }
 
   getMusic(): Observable<Music[]>{
-    return this.http.get<Music[]>( 'http://localhost:3000/musicList');
+    return this.http.get<Music[]>('http://localhost:3000/musicList');
+  }
+
+  delete(music: Music): Observable<void>{
+    return this.http.delete<void>('http://localhost:3000/musicList/' + music.id);
   }
 }

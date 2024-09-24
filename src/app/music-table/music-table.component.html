@@ -8,6 +8,7 @@
       <th scope="col">Ano de lançamento</th>
       <th scope="col">Gênero</th>
       <th scope="col">Gravadora</th>
+      <th scope="col">Opeções</th>
     </tr>
   </thead>
   <tbody>
@@ -18,6 +19,7 @@
       <td>{{music.year}}</td>
       <td>{{music.genre}}</td>
       <td>{{music.label}}</td>
+      <td><button class="remove" (click)="delete(music)">Remover Música</button></td>
     </tr>
   </tbody>
   </table>

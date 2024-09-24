@@ -1,0 +1,23 @@
+.remove {
+  background-color: #6200ea; /* Cor de fundo */
+  color: white;              /* Cor do texto */
+  padding: 12px 24px;         /* Espaçamento interno */
+  border: none;               /* Remove borda padrão */
+  border-radius: 8px;         /* Bordas arredondadas */
+  font-size: 16px;            /* Tamanho da fonte */
+  font-weight: bold;          /* Negrito */
+  cursor: pointer;            /* Cursor de mão ao passar */
+  transition: all 0.3s ease;  /* Transição suave para hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.remove:hover {
+  background-color: #3700b3;  /* Muda a cor de fundo no hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Aumenta a sombra no hover */
+  transform: translateY(-2px); /* Eleva levemente o botão */
+}
+
+.remove:active {
+  transform: translateY(0);    /* Remove o efeito de elevação ao clicar */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra volta ao normal */
+}
